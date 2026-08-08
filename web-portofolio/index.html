@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Cassandra.me">
+    <meta name="keywords" content="Cassandra, portfolio, machine learning, python, software engineering, data science, SMK RPL, student developer, data analysis, scikit-learn, pandas, numpy">
+    <meta name="author" content="Cassandra">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cassandra.me/">
+    <meta property="og:title" content="Cassandra.me">
+    <meta property="og:description" content="SMK RPL student passionate about Machine Learning and problem solving. Currently building ML models and exploring data science.">
+    <meta property="og:image" content="https://cassandra.me/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Cassandra Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cassandra.me/">
+    <meta name="twitter:title" content="Cassandra.me">
+    <meta name="twitter:description" content="SMK RPL student passionate about Machine Learning and problem solving. Currently building ML models and exploring data science.">
+    <meta name="twitter:image" content="https://cassandra.me/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#7BA0C0">
+    
+    <title>Cassandra.me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" aria-hidden="true">
+        <div class="loading-spinner" role="status" aria-label="Loading"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Cassandra.me Home">
+    <svg class="logo-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sparkle kanan atas -->
+        <path d="M 145 50 L 150 42 L 148 52 L 158 50 L 148 48 L 150 38 Z" fill="currentColor">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Sparkle kiri -->
+        <path d="M 60 110 L 52 105 L 58 112 L 50 117 L 58 118 L 52 125 Z" fill="currentColor">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Huruf C cursive dengan stroke horizontal -->
+        <path d="M 120 60 Q 140 55, 145 70 Q 148 82, 140 95 L 100 115 Q 75 135, 70 155 Q 68 170, 80 175 Q 95 180, 110 165 Q 120 152, 125 135" 
+              stroke="currentColor" 
+              stroke-width="12" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+              fill="none"/>
+        
+        <!-- Garis horizontal melintang -->
+        <path d="M 60 105 Q 100 100, 180 85" 
+              stroke="currentColor" 
+              stroke-width="4" 
+              stroke-linecap="round"/>
+    </svg>
+</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home"      class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about"     class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills"    class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#learning"  class="nav-link">Learning</a></li>
+                <li class="nav-item"><a href="#contact"   class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" role="button" tabindex="0">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-container" id="main-content" tabindex="-1">
+            <div class="hero-content fade-in">
+                <!-- SplitText animated heading -->
+                <h1 class="split-text-heading" id="split-text-hero" data-split-text="Cassandra.me">Cassandra.me</h1>
+
+                <p class="hero-subtitle">Machine Learning &amp; Problem Solver</p>
+                <p class="hero-description">
+                    Siswa RPL yang sedang membangun fondasi di Machine Learning dan Data Science.
+                </p>
+                <div class="hero-actions">
+                    <a href="#learning" class="cta-button">
+                        <span>Explore My Journey</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://github.com/stfucassandraa" target="_blank" rel="noopener noreferrer" class="cta-ghost">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                        <span>GitHub Profile</span>
+                    </a>
+                    <a href="#contact" class="cta-ghost">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- TECH STACK MARQUEE -->
+    <section class="logo-loop-section" aria-label="Tech stack and tools">
+        <div class="logo-loop" aria-label="Tech stack">
+            <div class="logo-loop__track" aria-live="off">
+                <ul class="logo-loop__list" role="list">
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Python - 2+ years experience for ML & data processing"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.8 0-4 1.1-4 3v2h5"/><path d="M8 7H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2"/><path d="M12 22c2.8 0 4-1.1 4-3v-2h-5"/><path d="M16 17h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-2"/><circle cx="9" cy="5" r=".6" fill="currentColor" stroke="none"/><circle cx="15" cy="19" r=".6" fill="currentColor" stroke="none"/></svg></span>Python</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="JavaScript - Web development & front-end scripting"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4c-2 0-3 1-3 3v3c0 1-.6 2-2 2 1.4 0 2 1 2 2v3c0 2 1 3 3 3"/><path d="M16 4c2 0 3 1 3 3v3c0 1 .6 2 2 2-1.4 0-2 1-2 2v3c0 2-1 3-3 3"/></svg></span>JavaScript</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="SQL - Database querying & data manipulation"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2Z"/><path d="M4 5v14c0 1.1 3.6 2 8 2s8-.9 8-2V5"/><path d="M4 12c0 1.1 3.6 2 8 2s8-.9 8-2"/></svg></span>SQL</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Git & GitHub - Version control & collaboration"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="12" r="2"/><path d="M7 7v10"/><path d="M9 8c3 0 6 1 8 4"/></svg></span>Git &amp; GitHub</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Pandas - Data manipulation & analysis library"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/><path d="M15 9v11"/></svg></span>Pandas</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="NumPy - Numerical computing & array operations"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span>NumPy</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Scikit-Learn - Machine learning algorithms & tools"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c4-6 14-6 18 2" stroke-dasharray="2 2.4"/><circle cx="6" cy="7" r="1.5" fill="currentColor" stroke="none"/><circle cx="10" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="16" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></span>Scikit-Learn</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="VS Code - Primary code editor & development environment"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/><line x1="13" y1="4" x2="11" y2="20"/></svg></span>VS Code</span></li>
+                </ul>
+                <ul class="logo-loop__list" role="list" aria-hidden="true">
+                    <!-- Duplicate for infinite scroll -->
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Python - 2+ years experience for ML & data processing"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.8 0-4 1.1-4 3v2h5"/><path d="M8 7H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2"/><path d="M12 22c2.8 0 4-1.1 4-3v-2h-5"/><path d="M16 17h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-2"/><circle cx="9" cy="5" r=".6" fill="currentColor" stroke="none"/><circle cx="15" cy="19" r=".6" fill="currentColor" stroke="none"/></svg></span>Python</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="JavaScript - Web development & front-end scripting"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4c-2 0-3 1-3 3v3c0 1-.6 2-2 2 1.4 0 2 1 2 2v3c0 2 1 3 3 3"/><path d="M16 4c2 0 3 1 3 3v3c0 1 .6 2 2 2-1.4 0-2 1-2 2v3c0 2-1 3-3 3"/></svg></span>JavaScript</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="SQL - Database querying & data manipulation"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2Z"/><path d="M4 5v14c0 1.1 3.6 2 8 2s8-.9 8-2V5"/><path d="M4 12c0 1.1 3.6 2 8 2s8-.9 8-2"/></svg></span>SQL</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Git & GitHub - Version control & collaboration"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="12" r="2"/><path d="M7 7v10"/><path d="M9 8c3 0 6 1 8 4"/></svg></span>Git &amp; GitHub</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Pandas - Data manipulation & analysis library"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/><path d="M15 9v11"/></svg></span>Pandas</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="NumPy - Numerical computing & array operations"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span>NumPy</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="Scikit-Learn - Machine learning algorithms & tools"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c4-6 14-6 18 2" stroke-dasharray="2 2.4"/><circle cx="6" cy="7" r="1.5" fill="currentColor" stroke="none"/><circle cx="10" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="16" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></span>Scikit-Learn</span></li>
+                    <li class="logo-loop__item"><span class="logo-chip" data-tooltip="VS Code - Primary code editor & development environment"><span class="logo-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/><line x1="13" y1="4" x2="11" y2="20"/></svg></span>VS Code</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="section-eyebrow fade-in">
+                <span class="eyebrow-chip">About</span>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 class="about-heading" id="about-heading">
+                        Tentang<br>
+                        <em>Cassandra</em>
+                    </h2>
+                    <p class="about-description">
+                        Halo! Saya Cassandra, siswa SMK jurusan Rekayasa Perangkat Lunak yang 
+                        jatuh cinta pada dunia Machine Learning dan Data Science. Perjalanan saya 
+                        dimulai dari belajar coding dasar di sekolah, dan sekarang saya sedang 
+                        mendalami bagaimana data bisa "berbicara" melalui algoritma ML.
+                    </p>
+                    <p class="about-description">
+                        Buat saya, Machine Learning bukan cuma soal akurasi model, tapi tentang 
+                        memecahkan masalah nyata dengan pendekatan yang fungsional dan berbasis data. 
+                        Setiap bug yang saya fix, setiap dataset yang saya eksplorasi, adalah step 
+                        menuju goal untuk menjadi problem solver yang lebih baik.
+                    </p>
+                    <blockquote class="about-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                        <p>Menghubungkan algoritma Machine Learning yang kompleks dengan kebutuhan praktis, sehingga solusi yang dibuat benar-benar dapat digunakan oleh pengguna.</p>
+                    </blockquote>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Hours Coding</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Skills Learned</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">2026</span>
+                            <span class="stat-label">Still Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <div class="profile-frame">
+                        <img src="photo_2026-08-05_18-17-58.jpg" alt="Cassandra - Machine Learning Student" class="profile-image" loading="lazy">
+                        <div class="profile-accent"></div>
+                    </div>
+                    <div class="profile-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span>Currently Learning: Deep Learning Fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="eyebrow-chip">Expertise</span>
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <p class="section-sub">Teknologi dan keahlian yang saya gunakan sehari-hari.</p>
+            </div>
+            <div class="skills-grid skills-grid-3">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9.5 3a3.5 3.5 0 0 0-3.5 3.5v.4A3 3 0 0 0 4 9.5v1a3 3 0 0 0 1 2.24V14a3.5 3.5 0 0 0 3.5 3.5"/>
+                            <path d="M14.5 3A3.5 3.5 0 0 1 18 6.5v.4A3 3 0 0 1 20 9.5v1a3 3 0 0 1-1 2.24V14a3.5 3.5 0 0 1-3.5 3.5"/>
+                            <path d="M9.5 3v18M14.5 3v18"/>
+                            <circle cx="9.5" cy="21" r=".9" fill="currentColor" stroke="none"/>
+                            <circle cx="14.5" cy="21" r=".9" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Core / Specialization</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="65"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Data Preprocessing</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Exploratory Data Analysis</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="75"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="8 9 4 12.5 8 16"/>
+                            <polyline points="16 9 20 12.5 16 16"/>
+                            <line x1="13.5" y1="6" x2="10.5" y2="19"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Software Development</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">JavaScript / HTML / CSS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="60"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">OOP</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="65"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4l-2.6 2.6-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Tools &amp; Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="80"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Scikit-Learn</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">Git &amp; GitHub</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="75"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item-header">
+                                <span class="skill-name">
+                                    VS Code
+                                    <span class="currently-learning-badge">Learning</span>
+                                </span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-progress="90"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="portfolio-header fade-in">
+                <div class="portfolio-header-left">
+                    <span class="eyebrow-chip">Work</span>
+                    <h2 class="section-title left">Projects</h2>
+                </div>
+                <p class="portfolio-header-note">Menampilkan proyek-proyek terbaru yang sedang dikembangkan.</p>
+            </div>
+
+            <div class="portfolio-grid-projects">
+                
+                <!-- Project 1: Predictor / Classification -->
+                <div class="project-card fade-in" data-category="ml">
+                    <div class="project-card-side style-blue">
+                        <span class="project-category">01 · Predictor / Classification</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-meta-top">
+                            <span class="status-badge status-building">
+                                <span class="status-dot"></span>
+                                In Development
+                            </span>
+                            <span class="progress-badge">45% Complete</span>
+                        </div>
+                        <h3 class="project-title">Model Performance &amp; Housing Price Predictor</h3>
+                        <p class="project-description">
+                            Model Machine Learning berbasis data tabular menggunakan Scikit-Learn untuk memprediksi hasil/harga berdasarkan fitur-fitur tertentu, dilengkapi dengan analisis EDA interaktif.
+                        </p>
+                        <div class="project-status-detail">
+                            <div class="status-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Dataset collected & cleaned</span>
+                            </div>
+                            <div class="status-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>EDA & visualization complete</span>
+                            </div>
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <span>Model training in progress</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.8 0-4 1.1-4 3v2h5"/><path d="M8 7H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2"/><path d="M12 22c2.8 0 4-1.1 4-3v-2h-5"/><path d="M16 17h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-2"/><circle cx="9" cy="5" r=".6" fill="currentColor" stroke="none"/><circle cx="15" cy="19" r=".6" fill="currentColor" stroke="none"/></svg>
+                                Python
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c4-6 14-6 18 2" stroke-dasharray="2 2.4"/><circle cx="6" cy="7" r="1.5" fill="currentColor" stroke="none"/><circle cx="10" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="16" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg>
+                                Scikit-Learn
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/><path d="M15 9v11"/></svg>
+                                Pandas
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                                Matplotlib
+                            </span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/stfucassandraa" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                                View on GitHub
+                            </a>
+                            <span class="project-eta">Expected: September 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ML Web Service -->
+                <div class="project-card fade-in" data-category="deployment">
+                    <div class="project-card-side style-gray">
+                        <span class="project-category style-gray-text">02 · API / Deployment</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-meta-top">
+                            <span class="status-badge status-planning">
+                                <span class="status-dot"></span>
+                                Planning
+                            </span>
+                            <span class="progress-badge">15% Complete</span>
+                        </div>
+                        <h3 class="project-title">End-to-End ML Web Service</h3>
+                        <p class="project-description">
+                            Integrasi model Machine Learning ke dalam API (FastAPI) dan dideploy ke web server agar bisa dikonsumsi oleh aplikasi front-end secara langsung.
+                        </p>
+                        <div class="project-status-detail">
+                            <div class="status-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>API architecture designed</span>
+                            </div>
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <span>Learning FastAPI basics</span>
+                            </div>
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+                                <span>Model serialization & deployment</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.8 0-4 1.1-4 3v2h5"/><path d="M8 7H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2"/><path d="M12 22c2.8 0 4-1.1 4-3v-2h-5"/><path d="M16 17h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-2"/><circle cx="9" cy="5" r=".6" fill="currentColor" stroke="none"/><circle cx="15" cy="19" r=".6" fill="currentColor" stroke="none"/></svg>
+                                Python
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="9" x2="15" y1="9" y2="9"/><line x1="9" x2="15" y1="15" y2="15"/></svg>
+                                FastAPI
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+                                Deployment
+                            </span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/stfucassandraa" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                                Follow Progress
+                            </a>
+                            <span class="project-eta">Expected: November 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Data Analytics -->
+                <div class="project-card fade-in" data-category="data">
+                    <div class="project-card-side style-dark">
+                        <span class="project-category style-dark-text">03 · Data Analytics</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-meta-top">
+                            <span class="status-badge status-planning">
+                                <span class="status-dot"></span>
+                                Planning
+                            </span>
+                            <span class="progress-badge">10% Complete</span>
+                        </div>
+                        <h3 class="project-title">Exploratory Data Analysis &amp; Insights</h3>
+                        <p class="project-description">
+                            Analisis mendalam pada dataset berskala menengah menggunakan pendekatan statistik dan visualisasi data yang komprehensif, untuk menemukan pola dan insight tersembunyi.
+                        </p>
+                        <div class="project-status-detail">
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <span>Dataset selection in progress</span>
+                            </div>
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+                                <span>Research methodology</span>
+                            </div>
+                            <div class="status-item status-pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+                                <span>Analysis & visualization</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/><path d="M15 9v11"/></svg>
+                                Data Analysis
+                            </span>
+                            <span class="tech-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                                Visualization
+                            </span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/stfucassandraa" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                                Follow Progress
+                            </a>
+                            <span class="project-eta">Expected: December 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section id="learning" class="learning section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="eyebrow-chip">Journey</span>
+                <h2 class="section-title">Learning Highlights</h2>
+                <p class="section-sub">Dokumentasi perjalanan belajar dan milestone yang telah dicapai.</p>
+            </div>
+            
+            <div class="learning-grid">
+                
+                <!-- Learning Card 1 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>August 2026</span>
+                    </div>
+                    <h3 class="learning-title">Understanding Cross-Validation</h3>
+                    <p class="learning-excerpt">
+                        Baru nyadar kalau train-test split saja tidak cukup. K-Fold CV 
+                        jauh lebih jujur dalam mengukur performa model karena setiap data ikut 
+                        validasi, bukan cuma segelintir yang "beruntung" masuk test set.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Machine Learning</span>
+                        <span class="learning-tag">Model Evaluation</span>
+                        <span class="learning-tag">Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 2 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>July 2026</span>
+                    </div>
+                    <h3 class="learning-title">Data Preprocessing Pipeline</h3>
+                    <p class="learning-excerpt">
+                        Membangun pipeline preprocessing yang menangani missing values, outlier, 
+                        dan feature scaling secara berurutan. Hasilnya jauh lebih rapi dan bisa 
+                        dipakai ulang tanpa perlu nulis ulang logika yang sama dua kali.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Data Science</span>
+                        <span class="learning-tag">Pandas</span>
+                        <span class="learning-tag">NumPy</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 3 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>June 2026</span>
+                    </div>
+                    <h3 class="learning-title">First Neural Network</h3>
+                    <p class="learning-excerpt">
+                        Bikin neural network dari nol pakai NumPy tanpa framework. 
+                        Proses implementasi backpropagation manual bikin saya paham kenapa 
+                        TensorFlow ada, dan menghargai apa yang framework itu sembunyikan dari kita.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Deep Learning</span>
+                        <span class="learning-tag">Neural Networks</span>
+                        <span class="learning-tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 4 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>May 2026</span>
+                    </div>
+                    <h3 class="learning-title">EDA Best Practices</h3>
+                    <p class="learning-excerpt">
+                        EDA bukan soal bikin plot yang cantik. Ini tentang tahu pertanyaan 
+                        apa yang harus diajukan ke data. Uji statistik dan visualisasi 
+                        cuma alat dan cara berpikirnya yang lebih penting.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Data Analysis</span>
+                        <span class="learning-tag">Visualization</span>
+                        <span class="learning-tag">Statistics</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 5 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>April 2026</span>
+                    </div>
+                    <h3 class="learning-title">Git & Version Control</h3>
+                    <p class="learning-excerpt">
+                        Akhirnya melampaui siklus add-commit-push. Branching dan merge 
+                        conflict yang dulu bikin panik sekarang sudah terasa wajar
+                        bahkan jadi bagian dari cara berpikir saat coding.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Git</span>
+                        <span class="learning-tag">Version Control</span>
+                        <span class="learning-tag">Collaboration</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 6 -->
+                <div class="learning-card fade-in">
+                    <div class="learning-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>March 2026</span>
+                    </div>
+                    <h3 class="learning-title">Feature Engineering Fundamentals</h3>
+                    <p class="learning-excerpt">
+                        Fitur yang bagus mengalahkan model yang kompleks. 
+                        Satu fitur yang tepat bisa menaikkan akurasi lebih dari 
+                        semua eksperimen hyperparameter yang pernah saya coba.
+                    </p>
+                    <div class="learning-tags">
+                        <span class="learning-tag">Machine Learning</span>
+                        <span class="learning-tag">Feature Engineering</span>
+                        <span class="learning-tag">Data Science</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="learning-cta fade-in">
+                <p class="learning-cta-text">Ikuti perjalanan belajar saya lebih detail di GitHub</p>
+                <a href="https://github.com/stfucassandraa" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                    <span>View GitHub Activity</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-headline fade-in">
+                    <span class="eyebrow-chip">Contact</span>
+                    <h2 class="contact-big-heading">Let's<br>Connect.</h2>
+                    <div class="contact-status-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span>Open to Opportunities</span>
+                    </div>
+                </div>
+                <div class="contact-details-col fade-in">
+                    <p class="contact-description">
+                        Saya terbuka untuk kolaborasi, freelance project, atau diskusi seputar Machine Learning dan Data Science. 
+                        Biasanya merespons dalam 1-2 hari.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-header">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span class="contact-label">Email</span>
+                            </div>
+                            <div class="contact-value-row">
+                                <a href="mailto:sheishirorakki@gmail.com" class="contact-link">sheishirorakki@gmail.com</a>
+                                <button class="copy-button" data-copy="sheishirorakki@gmail.com" aria-label="Copy email">
+                                    <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-header">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span class="contact-label">Phone</span>
+                            </div>
+                            <div class="contact-value-row">
+                                <a href="tel:+6282333809314" class="contact-link">+62 823-3380-9314</a>
+                                <button class="copy-button" data-copy="+6282333809314" aria-label="Copy phone">
+                                    <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-header">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span class="contact-label">Location</span>
+                            </div>
+                            <span class="contact-text">Sumenep, Madura — Indonesia</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-header">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span class="contact-label">Response Time</span>
+                            </div>
+                            <span class="contact-text">Usually within 1-2 days</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/2ndcassandra/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@1stcassandraa" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.8 4.5 4v3c-1.6 0-3.1-.5-4.5-1.4v6.4a5.5 5.5 0 1 1-5.5-5.5c.3 0 .7 0 1 .1v3.1a2.4 2.4 0 1 0 1.7 2.3V3h2.8z"/></svg>
+                            <span>TikTok</span>
+                        </a>
+                        <a href="https://github.com/stfucassandraa" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2026 Cassandra. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="#home"      class="footer-link">Home</a>
+                    <a href="#about"     class="footer-link">About</a>
+                    <a href="#portfolio" class="footer-link">Projects</a>
+                    <a href="#learning"  class="footer-link">Learning</a>
+                    <a href="#contact"   class="footer-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cassandra",
+      "url": "https://cassandra.me",
+      "image": "https://cassandra.me/photo_2026-08-05_18-17-58.jpg",
+      "jobTitle": "Machine Learning & Software Engineering Student",
+      "description": "SMK RPL student passionate about Machine Learning, Data Science, and Software Engineering",
+      "knowsAbout": ["Machine Learning", "Python", "Data Science", "Software Engineering", "Data Analysis", "Scikit-Learn", "Pandas", "NumPy"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "SMK - Rekayasa Perangkat Lunak"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sumenep",
+        "addressRegion": "Madura",
+        "addressCountry": "ID"
+      },
+      "email": "sheishirorakki@gmail.com",
+      "telephone": "+6282333809314",
+      "sameAs": [
+        "https://github.com/stfucassandraa",
+        "https://www.instagram.com/2ndcassandra/",
+        "https://www.tiktok.com/@1stcassandraa"
+      ]
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

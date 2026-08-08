@@ -1,0 +1,24 @@
+{
+  "name": "Cassandra Portfolio",
+  "short_name": "Cassandra",
+  "description": "Machine Learning & Software Engineering Student Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#7BA0C0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
