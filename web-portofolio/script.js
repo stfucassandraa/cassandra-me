@@ -229,7 +229,7 @@ function initSplitText() {
   const el = document.getElementById('split-text-hero')
   if (!el) return
 
-  // MOBILE FIX: Disable split animation on small screens
+  // fix on Mobile
   if (window.innerWidth <= 820) {
     el.classList.add('visible')
     return
