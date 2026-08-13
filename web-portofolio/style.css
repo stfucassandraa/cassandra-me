@@ -1,4 +1,4 @@
-/* DESIGN TOKENS — Cassandra Portfolio */
+/* Design Cassandra */
 :root {
   /* 1. Background & Surfaces */
   --bg:           #FAFAFA;   /* Abu sangat terang, latar utama */
@@ -442,7 +442,7 @@ select:focus-visible,
 .hamburger.active .bar:nth-child(2) { opacity: 0; }
 .hamburger.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* HERO — white gradient, particle title */
+/* HERO white gradient, particle title */
 .hero {
   min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
@@ -491,7 +491,7 @@ select:focus-visible,
   word-wrap: normal;
 }
 
-/* Mobile fix - prevent text breaking */
+/* Mobile fix */
 @media (max-width: 820px) {
   .split-text-heading {
     font-size: clamp(2.2rem, 10vw, 3.5rem);
@@ -976,7 +976,7 @@ select:focus-visible,
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* PORTFOLIO — white surface */
+/* PORTFOLIO and white surface */
 .portfolio { background: var(--surface); }
 
 /* Project cards (horizontal layout) */
@@ -1026,7 +1026,7 @@ select:focus-visible,
   }
 }
 
-/* Side colors derived from user's attached design references */
+/* Side colors */
 .project-card-side.style-blue {
   background: #9BB8D3; /* dusty blue */
 }
@@ -1415,7 +1415,7 @@ select:focus-visible,
   font-weight: 500;
 }
 
-/* CONTACT — alt surface */
+/* CONTACT */
 .contact { background: var(--surface-alt); }
 
 /* Social links */
@@ -1606,13 +1606,13 @@ select:focus-visible,
   margin: 0;
 }
 
-/* Left-aligned section title variant */
+/* section title variant */
 .section-title.left {
   text-align: left;
 }
 .section-title.left::after { left: 0; transform: none; }
 
-/* ── Hero additions ─────────────────────────────────────── */
+/* Hero additions */
 .hero-actions {
   display: flex;
   gap: var(--space-sm);
@@ -1648,7 +1648,7 @@ select:focus-visible,
   transform: scale(1.1);
 }
 
-/* ── About additions ────────────────────────────────────── */
+/* About additions */
 /* Large editorial heading with italic accent */
 .about-heading {
   font-size: clamp(2.2rem, 4.5vw, 3.4rem);
@@ -1698,7 +1698,7 @@ select:focus-visible,
 }
 .profile-image:hover { transform: scale(1.02); }
 
-/* ── Portfolio additions ────────────────────────────────── */
+/* Portfolio additions */
 /* Split header: title left, note right */
 .portfolio-header {
   display: flex;
@@ -1716,7 +1716,7 @@ select:focus-visible,
   padding-bottom: 4px;
 }
 
-/* Coming soon icon (SVG, not emoji) */
+/* Coming soon icon */
 .coming-soon-icon {
   width: 56px; height: 56px;
   background: var(--muted);
@@ -1726,8 +1726,7 @@ select:focus-visible,
   color: var(--fg-3);
 }
 
-/* ── Contact additions ──────────────────────────────────── */
-/* Replace centered layout → editorial split */
+/* Contact additions */
 .contact-inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
