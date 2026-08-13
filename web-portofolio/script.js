@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeKeyboardNavigation()
 })
 
-// ── Copy to clipboard ────────────────────────────────────────────────────────
+// Copy to clipboard
 function initializeCopyButtons() {
   document.querySelectorAll('.copy-button').forEach(button => {
     button.addEventListener('click', async function() {
