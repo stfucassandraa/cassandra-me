@@ -59,7 +59,7 @@ function showToast(message) {
   }, 2500)
 }
 
-// ── Keyboard shortcuts ───────────────────────────────────────────────────────
+// Keyboard shortcuts
 function initializeKeyboardNavigation() {
   const navMenu   = document.getElementById('nav-menu')
   const hamburger = document.getElementById('hamburger')
@@ -79,7 +79,7 @@ function initializeKeyboardNavigation() {
   })
 }
 
-// ── Tooltip — pause marquee on hover ────────────────────────────────────────
+// Tooltip
 function initializeTooltips() {
   document.querySelectorAll('[data-tooltip]').forEach(el => {
     const track = el.closest('.logo-loop__track')
@@ -89,7 +89,7 @@ function initializeTooltips() {
   })
 }
 
-// ── Theme ───────────────────────────────────────────────────────────────────
+// Theme
 function initializeTheme() {
   const toggle = document.getElementById('theme-toggle')
   const saved  = localStorage.getItem('theme')
@@ -126,7 +126,7 @@ function createRipple(button) {
   setTimeout(() => ripple.remove(), 600)
 }
 
-// ── Loading screen ───────────────────────────────────────────────────────────
+// Loading Screen
 function initializeLoading() {
   const screen = document.getElementById('loading-screen')
   window.addEventListener('load', () => {
@@ -137,7 +137,7 @@ function initializeLoading() {
   })
 }
 
-// ── Navigation ───────────────────────────────────────────────────────────────
+// Navigation
 function initializeNavigation() {
   const navbar    = document.getElementById('navbar')
   const hamburger = document.getElementById('hamburger')
@@ -189,7 +189,7 @@ function initializeNavigation() {
   }, { passive: true })
 }
 
-// ── Scroll animations + skill bars ──────────────────────────────────────────
+// scroll animation + skill bars
 function initializeScrollAnimations() {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -211,7 +211,7 @@ function animateSkillBars(card) {
   })
 }
 
-// ── Smooth scroll ────────────────────────────────────────────────────────────
+// smooth scroll features
 function initializeSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
@@ -224,7 +224,7 @@ function initializeSmoothScroll() {
   })
 }
 
-// ── SplitText hero heading ───────────────────────────────────────────────────
+// SplitText hero heading
 function initSplitText() {
   const el = document.getElementById('split-text-hero')
   if (!el) return
@@ -286,7 +286,7 @@ function initSplitText() {
   })
 }
 
-// ── Hero parallax ────────────────────────────────────────────────────────────
+// Hero parallax
 let parallaxId
 window.addEventListener('scroll', () => {
   if (parallaxId) cancelAnimationFrame(parallaxId)
